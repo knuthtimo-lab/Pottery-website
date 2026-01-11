@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>IKKAI Ceramics - Editorial Collection</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&amp;family=Manrope:wght@200;300;400;500&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#292524", // Warm Charcoal
+                        secondary: "#78716C", // Warm Stone
+                        "background-light": "#F5F4F0", // Soft Sand / Alabaster (Hero)
+                        "background-dark": "#1C1917", // Dark Warm Grey
+                        // New Sectional Colors
+                        "sage": "#D4D9D1", // Soft Sage Green
+                        "warm-grey": "#DAD7D4", // Warm Grey
+                        "clay-dark": "#33302D", // Deep Charcoal / Clay
+                        "terracotta-soft": "#E6DDD5", // Pale Ochre / Soft Terracotta
+                        "accent-sand": "#E7E5E4",
+                        "accent-warm": "#D6D3D1",
+                        "text-main": "#1C1917",
+                        "text-muted": "#57534E",
+                    },
+                    fontFamily: {
+                        display: ["Cormorant Garamond", "serif"],
+                        body: ["Manrope", "sans-serif"],
+                    },
+                    fontSize: {
+                        '10xl': '10rem',
+                    },
+                    spacing: {
+                        '128': '32rem',
+                    }
+                },
+            },
+        };
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 300,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F5F4F0; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D6D3D1; 
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #78716C; 
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+<body class="font-body bg-background-light dark:bg-background-dark text-text-main dark:text-gray-200 antialiased transition-colors duration-500 selection:bg-stone-200 selection:text-black">
+    <div id="root"></div>
+</body>
+</html>
